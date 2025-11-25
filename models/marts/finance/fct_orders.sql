@@ -1,4 +1,4 @@
-with payments as (select orderid as order_id, amount, status from {{ref('stg_stripe__payments')}}),
+with payments as (select order_id, amount, status from {{ref('stg_stripe__payments')}}),
 
 
 orders as (select * from {{ ref('stg_jaffle_shop__orders')}}),
