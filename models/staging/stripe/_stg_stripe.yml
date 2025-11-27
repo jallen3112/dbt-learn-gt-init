@@ -1,10 +1,10 @@
 models:
-  - name: stg_stripe_payments
+  - name: stg_stripe__payments
     description: Staging model for stripe payments 
     columns:
           - name: id
             description: payment id primary map_keys
           - name: order_id
             description: order id foreign key
-          - name: paymentmethod
+          - name: status
             description: "{{doc('order_status')}}"
